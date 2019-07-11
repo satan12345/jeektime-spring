@@ -64,6 +64,7 @@
         <module>datasource</module>
         <module>hikricpdatasource</module>
         <module>duriddatasource</module>
+        <module>simplejdbc</module>
     </modules>
 
 
