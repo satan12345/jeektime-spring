@@ -7,17 +7,14 @@
         <artifactId>jeektime</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+    <artifactId>hikricpdatasource</artifactId>
 
-    <artifactId>helloworld</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <name>helloworld</name>
+    <name>hikricpdatasource</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
     </properties>
-
-
 
 
 
