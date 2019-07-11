@@ -62,6 +62,8 @@
         <module>helloworld</module>
         <module>mulit-datasource</module>
         <module>datasource</module>
+        <module>hikricpdatasource</module>
+        <module>duriddatasource</module>
     </modules>
 
 
