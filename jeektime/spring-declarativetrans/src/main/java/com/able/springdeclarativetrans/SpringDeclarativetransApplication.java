@@ -39,17 +39,22 @@ public class SpringDeclarativetransApplication implements CommandLineRunner {
         count=jdbcTemplate.queryForObject("SELECT COUNT(*) FROM FOO WHERE BAR='BBB'",Long.class);
         log.info("BBB={}",count);
 
+////        try {
+////            fooService.invokeInsertThenRollback();
+////        } catch (RollbackException e) {
+////            //e.printStackTrace();
+////        }
+////        count=jdbcTemplate.queryForObject("SELECT COUNT(*) FROM FOO WHERE BAR='BBB'",Long.class);
+////        log.info("BBB={}",count);
 //        try {
-//            fooService.invokeInsertThenRollback();
+//            fooService.invokeInsertThenRollbackByAopContext();
 //        } catch (RollbackException e) {
 //            //e.printStackTrace();
 //        }
-//        count=jdbcTemplate.queryForObject("SELECT COUNT(*) FROM FOO WHERE BAR='BBB'",Long.class);
-//        log.info("BBB={}",count);
         try {
-            fooService.invokeInsertThenRollbackByAopContext();
+            fooService.invokeInsertThenRollbackBySelfService();
         } catch (RollbackException e) {
-            //e.printStackTrace();
+            e.printStackTrace();
         }
         count=jdbcTemplate.queryForObject("SELECT COUNT(*) FROM FOO WHERE BAR='BBB'",Long.class);
         log.info("BBB={}",count);
